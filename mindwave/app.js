@@ -1,16 +1,16 @@
 var thinkgear = require('../lib');
 var watson = require('watson-developer-cloud');
 var mqtt = require('mqtt');
-var clientId = ['d', "u1cie2", "AreyMac", "AreyMindWave"].join(':');  //裝置變數
+var clientId = ['d', "org", "AreyMac", "AreyMindWave"].join(':');  //裝置變數
 
 var client = thinkgear.createClient();
 
-iot_client = mqtt.connect("mqtt://u1cie2.messaging.internetofthings.ibmcloud.com:1883",//連結mqtt伺服器的認證
+iot_client = mqtt.connect("mqtt://"org".messaging.internetofthings.ibmcloud.com:1883",//連結mqtt伺服器的認證
 	                          {
 	                              "clientId" : clientId,
 	                              "keepalive" : 30,
 	                              "username" : "use-token-auth",
-	                              "password" : "OIA+29ObU1Rx_i7vG7"
+	                              "password" : "psw"
 	                          });
 	iot_client.on('connect', function() {//如果連接上的話要做的事情
 		
