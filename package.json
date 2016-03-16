@@ -1,0 +1,19 @@
+{
+  "name": "node-thinkgear-sockets",
+  "description": "A Node.js client library for the ThinkGear Sockets Protocol from NeuroSky",
+  "author": "AreyLiu",
+  "version": "0.0.1",
+  "main": "./lib/index.js",
+  "license": {
+    "type": "MIT",
+    "url": "https://raw.github.com/afiedler/node-thinkgear-sockets/master/LICENSE.md"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "repository": "git://github.com/afiedler/node-thinkgear-sockets.git",
+  "dependencies": {
+    "mqtt": "^1.7.3",
+    "watson-developer-cloud": "^1.2.5"
+  }
+}
